@@ -22,7 +22,6 @@ var app = builder.Build();
 // {
 // }
 
-//app.UseAuthorization();
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
 app.UseAuthentication();
